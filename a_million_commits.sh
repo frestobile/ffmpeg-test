@@ -1,13 +1,13 @@
 # a million commits
-for Y in {2019..2020}
+for Y in {2018..2019}
 do
   mkdir $Y
   cd $Y
-  for M in {01..05}
+  for M in {05..12}
   do
     mkdir $M
     cd $M
-    for D in {01..31}
+    for D in {01..30}
     do
     if [ $(( ( RANDOM % 10 )  + 1 )) -eq 3 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 4 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 5 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 7 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 8 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 9 ] || [ $(( ( RANDOM % 10 )  + 1 )) -eq 2 ]
     then
