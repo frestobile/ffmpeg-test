@@ -31,7 +31,7 @@ do
   done
   cd ../
 done
-git push origin master
+git push -f origin master
 git rm -rf 20**
 git rm -rf 19**
 git commit -am "cleanup"
